@@ -10,7 +10,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: path.join(__dirname, 'src'),
+      { test: path.join(__dirname, 'node_modules'),
         loader: 'babel-loader' }
     ]
   }
