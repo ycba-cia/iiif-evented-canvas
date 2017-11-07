@@ -37,7 +37,7 @@ var getThumbUrl = function(resource, width) {
   };
 
   var id = resource['@id'];
-  if (typeof resource === 'string' || value instanceof String) {
+  if (typeof resource === 'string' || resource instanceof String) {
     id = resource;
   }
   if(!id.toLowerCase().match(/^.*\.(png|jpg|jpeg|gif)$/)) { // it is still a service URL
